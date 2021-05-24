@@ -13,10 +13,11 @@
 		E7478E62262B657300A4F10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7478E60262B657300A4F10C /* Main.storyboard */; };
 		E7478E64262B657500A4F10C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7478E63262B657500A4F10C /* Assets.xcassets */; };
 		E7478E67262B657500A4F10C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7478E65262B657500A4F10C /* LaunchScreen.storyboard */; };
+		E7946753265C5AD3002ECA4E /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7946752265C5AD3002ECA4E /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E7478E57262B657300A4F10C /* firstLessonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstLessonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7478E57262B657300A4F10C /* myBrilliantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBrilliantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7478E5A262B657300A4F10C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7478E5C262B657300A4F10C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E7478E5E262B657300A4F10C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		E7478E63262B657500A4F10C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7478E66262B657500A4F10C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7478E68262B657500A4F10C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7946752265C5AD3002ECA4E /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		E7478E58262B657300A4F10C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7478E57262B657300A4F10C /* firstLessonApp.app */,
+				E7478E57262B657300A4F10C /* myBrilliantApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +61,7 @@
 				E7478E5A262B657300A4F10C /* AppDelegate.swift */,
 				E7478E5C262B657300A4F10C /* SceneDelegate.swift */,
 				E7478E5E262B657300A4F10C /* ViewController.swift */,
+				E7946752265C5AD3002ECA4E /* SliderViewController.swift */,
 				E7478E60262B657300A4F10C /* Main.storyboard */,
 				E7478E63262B657500A4F10C /* Assets.xcassets */,
 				E7478E65262B657500A4F10C /* LaunchScreen.storyboard */,
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7478E56262B657200A4F10C /* firstLessonApp */ = {
+		E7478E56262B657200A4F10C /* myBrilliantApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7478E6B262B657500A4F10C /* Build configuration list for PBXNativeTarget "firstLessonApp" */;
+			buildConfigurationList = E7478E6B262B657500A4F10C /* Build configuration list for PBXNativeTarget "myBrilliantApp" */;
 			buildPhases = (
 				E7478E53262B657200A4F10C /* Sources */,
 				E7478E54262B657200A4F10C /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = firstLessonApp;
+			name = myBrilliantApp;
 			productName = firstLessonApp;
-			productReference = E7478E57262B657300A4F10C /* firstLessonApp.app */;
+			productReference = E7478E57262B657300A4F10C /* myBrilliantApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7478E56262B657200A4F10C /* firstLessonApp */,
+				E7478E56262B657200A4F10C /* myBrilliantApp */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +143,7 @@
 				E7478E5F262B657300A4F10C /* ViewController.swift in Sources */,
 				E7478E5B262B657300A4F10C /* AppDelegate.swift in Sources */,
 				E7478E5D262B657300A4F10C /* SceneDelegate.swift in Sources */,
+				E7946753265C5AD3002ECA4E /* SliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = guliklyuda.firstLessonApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gulik-lyuda.myBrilliantApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = guliklyuda.firstLessonApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gulik-lyuda.myBrilliantApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7478E6B262B657500A4F10C /* Build configuration list for PBXNativeTarget "firstLessonApp" */ = {
+		E7478E6B262B657500A4F10C /* Build configuration list for PBXNativeTarget "myBrilliantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7478E6C262B657500A4F10C /* Debug */,
