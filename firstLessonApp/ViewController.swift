@@ -30,7 +30,14 @@ class ViewController: UIViewController {
         sender.isEnabled = false
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SliderVC" {
+            print("SliderVC should be opened :-)")
+        }
+    }
+    
     @IBAction func openNewScreen(_ sender: UIButton) {
+        
         
     }
     

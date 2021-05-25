@@ -9,23 +9,30 @@ import UIKit
 
 class SliderViewController: UIViewController {
 
+    @IBOutlet private var outerView: UIView!
+    @IBOutlet private var innerView: UIView!
+    @IBOutlet var slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Slider Page"
-
-        // Do any additional setup after loading the view.
+        defaultConfig()
+        sliderChanged(slider)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        //change inner view opacity on changing slider value
+        innerView.alpha = CGFloat(sender.value)
     }
-    */
+}
 
+private extension SliderViewController {
+    func defaultConfig() {
+        title = "Slider Page"
+        
+        outerView.layer.cornerRadius = 15
+        innerView.layer.cornerRadius = 12
+        
+        slider.value = 0.7
+    }
 }

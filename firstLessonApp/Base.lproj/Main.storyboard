@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="width" constant="270" id="Zoe-dC-fYd"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-Uh-ePP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-Uh-ePP">
                                 <rect key="frame" x="158" y="575" width="98" height="34"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Open Slider">
@@ -63,7 +63,7 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IDh-rm-2XX" kind="show" id="TfI-2v-APH"/>
+                                    <segue destination="IDh-rm-2XX" kind="show" identifier="SliderVC" id="K4Q-GO-VXa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,8 +116,11 @@
                                     <constraint firstAttribute="bottom" secondItem="m9i-hw-vO1" secondAttribute="bottom" constant="20" id="vnf-tx-GEg"/>
                                 </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-it-bqS">
-                                <rect key="frame" x="48" y="502" width="318" height="30"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-it-bqS">
+                                <rect key="frame" x="48" y="502" width="318" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="IDh-rm-2XX" eventType="valueChanged" id="wOS-vv-maB"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ac9-79-nQo"/>
@@ -128,9 +131,15 @@
                             <constraint firstItem="Ac9-79-nQo" firstAttribute="trailing" secondItem="euF-5d-RxD" secondAttribute="trailing" constant="50" id="DFa-LW-vgU"/>
                             <constraint firstItem="Ac9-79-nQo" firstAttribute="trailing" secondItem="bX4-it-bqS" secondAttribute="trailing" constant="50" id="VVT-w9-iM7"/>
                             <constraint firstItem="euF-5d-RxD" firstAttribute="top" secondItem="Ac9-79-nQo" secondAttribute="top" constant="50" id="fDR-ZS-Ztz"/>
+                            <constraint firstItem="bX4-it-bqS" firstAttribute="top" secondItem="euF-5d-RxD" secondAttribute="bottom" constant="50" id="lcx-nS-kRO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W53-vP-e9T"/>
+                    <connections>
+                        <outlet property="innerView" destination="m9i-hw-vO1" id="DaK-Ur-4MG"/>
+                        <outlet property="outerView" destination="euF-5d-RxD" id="zRT-OP-nXA"/>
+                        <outlet property="slider" destination="bX4-it-bqS" id="gxz-De-KVf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zA3-9F-auC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
