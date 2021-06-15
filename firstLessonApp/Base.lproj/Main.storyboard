@@ -66,6 +66,25 @@
                                     <segue destination="IDh-rm-2XX" kind="show" identifier="SliderVC" id="K4Q-GO-VXa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5q-gY-ou1">
+                                <rect key="frame" x="74.5" y="629" width="265" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Work with shadow and gradient">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KM4-70-DE5" kind="show" id="8wN-1o-auC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-6r-gMG">
+                                <rect key="frame" x="149.5" y="683" width="115" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Open Scroller">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,9 +96,13 @@
                             <constraint firstItem="72m-0W-eFn" firstAttribute="top" secondItem="eYu-U6-yTn" secondAttribute="bottom" constant="20" id="GEE-9i-i6i"/>
                             <constraint firstItem="9Eo-yF-rdv" firstAttribute="top" secondItem="71T-ef-WE0" secondAttribute="bottom" constant="20" id="PGd-oP-EVV"/>
                             <constraint firstItem="nTE-Uh-ePP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SUN-8X-L0a"/>
+                            <constraint firstItem="tJK-6r-gMG" firstAttribute="top" secondItem="w5q-gY-ou1" secondAttribute="bottom" constant="20" id="U2a-uK-7b5"/>
                             <constraint firstItem="72m-0W-eFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFH-7J-nWw"/>
+                            <constraint firstItem="w5q-gY-ou1" firstAttribute="top" secondItem="nTE-Uh-ePP" secondAttribute="bottom" constant="20" id="gYS-UU-hut"/>
+                            <constraint firstItem="w5q-gY-ou1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oWv-7H-nV9"/>
                             <constraint firstItem="nTE-Uh-ePP" firstAttribute="top" secondItem="9Eo-yF-rdv" secondAttribute="bottom" constant="20" id="oyE-ue-181"/>
                             <constraint firstItem="9Eo-yF-rdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pMg-OT-pd5"/>
+                            <constraint firstItem="tJK-6r-gMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phl-Jr-36W"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1iC-6Q-CnY"/>
@@ -161,9 +184,80 @@
             </objects>
             <point key="canvasLocation" x="2000" y="414"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="TEN-L4-GwY">
+            <objects>
+                <viewController id="8BP-Hm-KQ6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4T3-M2-QjD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HIm-zA-f1M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAv-JD-67p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="1158"/>
+        </scene>
+        <!--Gradient View Controller-->
+        <scene sceneID="ACV-RJ-AUb">
+            <objects>
+                <viewController id="KM4-70-DE5" customClass="GradientViewController" customModule="myBrilliantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QHb-1h-1eZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="200" image="pascal-mauerhofer" translatesAutoresizingMaskIntoConstraints="NO" id="f8K-Rw-bIt">
+                                <rect key="frame" x="20" y="138" width="374" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yz0-rj-PA9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f8K-Rw-bIt" firstAttribute="centerX" secondItem="QHb-1h-1eZ" secondAttribute="centerX" id="5Zn-rn-dro"/>
+                            <constraint firstItem="f8K-Rw-bIt" firstAttribute="top" secondItem="yz0-rj-PA9" secondAttribute="top" constant="50" id="JvF-QP-aFp"/>
+                            <constraint firstAttribute="trailing" secondItem="f8K-Rw-bIt" secondAttribute="trailing" constant="20" id="TLl-vI-DYN"/>
+                            <constraint firstItem="f8K-Rw-bIt" firstAttribute="leading" secondItem="QHb-1h-1eZ" secondAttribute="leading" constant="20" id="bbI-5i-Fpj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="So8-2a-Ioa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Lk-iD-Fey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="1159"/>
+        </scene>
+        <!--Scroller View Controller-->
+        <scene sceneID="7G9-ym-8vF">
+            <objects>
+                <viewController id="zTy-gZ-LMV" customClass="ScrollerViewController" customModule="myBrilliantApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gz3-fo-lgm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNz-FJ-m8p">
+                                <rect key="frame" x="0.0" y="44" width="404" height="818"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="5Tf-sL-ABo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0jW-5x-2rZ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kKC-BE-02c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kKC-BE-02c" firstAttribute="trailing" secondItem="PNz-FJ-m8p" secondAttribute="trailing" id="GA0-dg-P5D"/>
+                            <constraint firstItem="PNz-FJ-m8p" firstAttribute="top" secondItem="kKC-BE-02c" secondAttribute="top" id="LKE-84-qIa"/>
+                            <constraint firstItem="kKC-BE-02c" firstAttribute="bottom" secondItem="PNz-FJ-m8p" secondAttribute="bottom" id="VDC-Xu-v03"/>
+                            <constraint firstItem="PNz-FJ-m8p" firstAttribute="leading" secondItem="kKC-BE-02c" secondAttribute="leading" id="x0U-OV-8aY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8O-O5-djm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3500.0000000000005" y="1157.8125"/>
+        </scene>
     </scenes>
     <resources>
         <image name="diamond" width="343" height="251"/>
+        <image name="pascal-mauerhofer" width="1717" height="1064"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
