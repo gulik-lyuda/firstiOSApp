@@ -16,103 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71T-ef-WE0">
-                                <rect key="frame" x="139.5" y="467" width="135" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Change Caption">
-                                    <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeAppCaption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m90-uj-6gy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-yF-rdv">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-yF-rdv">
                                 <rect key="frame" x="107.5" y="521" width="199" height="34"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <state key="normal" title="Change View Controller">
                                     <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="changeViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bh-Yu-xuW"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Brilliant App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72m-0W-eFn" userLabel="appCaption">
-                                <rect key="frame" x="101.5" y="378" width="211" height="59"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="MU0-xJ-TVA"/>
-                                    <constraint firstAttribute="height" constant="59" id="sf6-1M-ESD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-U6-yTn">
-                                <rect key="frame" x="72" y="88" width="270" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="ORL-pd-pki"/>
-                                    <constraint firstAttribute="width" constant="270" id="Zoe-dC-fYd"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-Uh-ePP">
-                                <rect key="frame" x="158" y="575" width="98" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Open Slider">
-                                    <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="IDh-rm-2XX" kind="show" identifier="SliderVC" id="K4Q-GO-VXa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5q-gY-ou1">
-                                <rect key="frame" x="74.5" y="629" width="265" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Work with shadow and gradient">
-                                    <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="KM4-70-DE5" kind="show" id="8wN-1o-auC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-6r-gMG">
-                                <rect key="frame" x="149.5" y="683" width="115" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Open Scroller">
-                                    <color key="titleColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eYu-U6-yTn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C2m-ZU-L2K"/>
-                            <constraint firstItem="71T-ef-WE0" firstAttribute="top" secondItem="72m-0W-eFn" secondAttribute="bottom" constant="30" id="CYq-gz-ygT"/>
-                            <constraint firstItem="71T-ef-WE0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E5Y-9F-pIj"/>
-                            <constraint firstItem="eYu-U6-yTn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EJp-QY-Rdh"/>
-                            <constraint firstItem="72m-0W-eFn" firstAttribute="top" secondItem="eYu-U6-yTn" secondAttribute="bottom" constant="20" id="GEE-9i-i6i"/>
-                            <constraint firstItem="9Eo-yF-rdv" firstAttribute="top" secondItem="71T-ef-WE0" secondAttribute="bottom" constant="20" id="PGd-oP-EVV"/>
-                            <constraint firstItem="nTE-Uh-ePP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SUN-8X-L0a"/>
-                            <constraint firstItem="tJK-6r-gMG" firstAttribute="top" secondItem="w5q-gY-ou1" secondAttribute="bottom" constant="20" id="U2a-uK-7b5"/>
-                            <constraint firstItem="72m-0W-eFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFH-7J-nWw"/>
-                            <constraint firstItem="w5q-gY-ou1" firstAttribute="top" secondItem="nTE-Uh-ePP" secondAttribute="bottom" constant="20" id="gYS-UU-hut"/>
-                            <constraint firstItem="w5q-gY-ou1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oWv-7H-nV9"/>
-                            <constraint firstItem="nTE-Uh-ePP" firstAttribute="top" secondItem="9Eo-yF-rdv" secondAttribute="bottom" constant="20" id="oyE-ue-181"/>
                             <constraint firstItem="9Eo-yF-rdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pMg-OT-pd5"/>
-                            <constraint firstItem="tJK-6r-gMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="phl-Jr-36W"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1iC-6Q-CnY"/>
-                    <connections>
-                        <outlet property="appCaption" destination="72m-0W-eFn" id="84x-XA-Oc5"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2750.7246376811595" y="413.83928571428572"/>
+            <point key="canvasLocation" x="4243" y="1134"/>
         </scene>
         <!--Slider View Controller-->
         <scene sceneID="KOn-CY-Wag">
@@ -177,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yiL-w1-I2Y"/>
+                        <segue destination="8BP-Hm-KQ6" kind="relationship" relationship="rootViewController" id="fzz-Cj-cxj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMd-kw-pET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,17 +110,153 @@
         <!--View Controller-->
         <scene sceneID="TEN-L4-GwY">
             <objects>
-                <viewController id="8BP-Hm-KQ6" sceneMemberID="viewController">
+                <viewController id="8BP-Hm-KQ6" customClass="ViewController" customModule="myBrilliantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4T3-M2-QjD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2m-Gl-yoj">
+                                <rect key="frame" x="0.0" y="447" width="414" height="415"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ziv-Qa-wEF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="566"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWi-wa-wH8">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Change Caption"/>
+                                                <connections>
+                                                    <action selector="changeAppCaption:" destination="8BP-Hm-KQ6" eventType="touchUpInside" id="ldh-yp-BSq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJs-sJ-Ejk">
+                                                <rect key="frame" x="0.0" y="48" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Change View Controller"/>
+                                                <connections>
+                                                    <action selector="changeViewController:" destination="8BP-Hm-KQ6" eventType="touchUpInside" id="tyF-fO-VD1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dv-in-VmP">
+                                                <rect key="frame" x="0.0" y="96" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Open Slider"/>
+                                                <connections>
+                                                    <segue destination="IDh-rm-2XX" kind="show" id="BZT-1d-r0z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wal-AR-Bmo">
+                                                <rect key="frame" x="0.0" y="144" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Work with shadow and gradient"/>
+                                                <connections>
+                                                    <segue destination="KM4-70-DE5" kind="show" id="YvH-nz-ces"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCz-Sr-qZA">
+                                                <rect key="frame" x="0.0" y="192" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR3-Ta-8Ej">
+                                                <rect key="frame" x="0.0" y="240" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVD-jT-Myb">
+                                                <rect key="frame" x="0.0" y="288" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1at-qJ-V8a">
+                                                <rect key="frame" x="0.0" y="336" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-fg-fyi">
+                                                <rect key="frame" x="0.0" y="384" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOp-7m-fdh">
+                                                <rect key="frame" x="0.0" y="432" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boy-Iv-f8D">
+                                                <rect key="frame" x="0.0" y="480" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhb-OA-atN">
+                                                <rect key="frame" x="0.0" y="528" width="414" height="38"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                <state key="normal" title="Button 1"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ziv-Qa-wEF" secondAttribute="bottom" id="XJL-i9-KWM"/>
+                                    <constraint firstItem="ziv-Qa-wEF" firstAttribute="leading" secondItem="k2m-Gl-yoj" secondAttribute="leading" id="bOi-a8-cg9"/>
+                                    <constraint firstItem="ziv-Qa-wEF" firstAttribute="width" secondItem="k2m-Gl-yoj" secondAttribute="width" id="hB0-Ib-DGo"/>
+                                    <constraint firstAttribute="trailing" secondItem="ziv-Qa-wEF" secondAttribute="trailing" id="phd-vX-5YG"/>
+                                    <constraint firstItem="ziv-Qa-wEF" firstAttribute="top" secondItem="k2m-Gl-yoj" secondAttribute="top" id="zBg-ks-oEb"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WAb-sz-aUc"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HvR-qb-1ck"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99I-Oa-ven">
+                                <rect key="frame" x="0.0" y="88" width="414" height="359"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Brilliant App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCh-8b-Ctq" userLabel="appCaption">
+                                        <rect key="frame" x="101.5" y="280" width="211" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="211" id="MM2-s9-6B1"/>
+                                            <constraint firstAttribute="height" constant="59" id="QiZ-nO-K0P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="0.0078431372550000003" green="0.2784313725" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="iGf-1m-kcg">
+                                        <rect key="frame" x="72" y="0.0" width="270" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="5jo-oL-n8Y"/>
+                                            <constraint firstAttribute="width" constant="270" id="E2K-9u-09b"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WCh-8b-Ctq" secondAttribute="bottom" constant="20" id="eo9-jO-VuP"/>
+                                    <constraint firstItem="iGf-1m-kcg" firstAttribute="centerX" secondItem="99I-Oa-ven" secondAttribute="centerX" id="iJf-Up-XlV"/>
+                                    <constraint firstItem="WCh-8b-Ctq" firstAttribute="centerX" secondItem="99I-Oa-ven" secondAttribute="centerX" id="odX-Zu-an8"/>
+                                    <constraint firstItem="WCh-8b-Ctq" firstAttribute="top" secondItem="iGf-1m-kcg" secondAttribute="bottom" constant="10" id="w9r-B3-IiP"/>
+                                    <constraint firstItem="iGf-1m-kcg" firstAttribute="top" secondItem="99I-Oa-ven" secondAttribute="top" id="wxG-vy-RnR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HIm-zA-f1M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HIm-zA-f1M" firstAttribute="trailing" secondItem="99I-Oa-ven" secondAttribute="trailing" id="6we-eZ-dgJ"/>
+                            <constraint firstItem="k2m-Gl-yoj" firstAttribute="trailing" secondItem="HIm-zA-f1M" secondAttribute="trailing" id="Sgc-vq-t79"/>
+                            <constraint firstItem="k2m-Gl-yoj" firstAttribute="leading" secondItem="HIm-zA-f1M" secondAttribute="leading" id="UJD-Bp-Pdb"/>
+                            <constraint firstItem="99I-Oa-ven" firstAttribute="leading" secondItem="HIm-zA-f1M" secondAttribute="leading" id="d6Z-QG-Ofm"/>
+                            <constraint firstItem="99I-Oa-ven" firstAttribute="top" secondItem="HIm-zA-f1M" secondAttribute="top" id="kb6-bg-8bp"/>
+                            <constraint firstItem="HIm-zA-f1M" firstAttribute="bottom" secondItem="k2m-Gl-yoj" secondAttribute="bottom" id="v7B-Ve-S8d"/>
+                            <constraint firstItem="k2m-Gl-yoj" firstAttribute="top" secondItem="99I-Oa-ven" secondAttribute="bottom" id="zs1-K3-YWP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="nkX-ez-1AM"/>
+                    <connections>
+                        <outlet property="appCaption" destination="WCh-8b-Ctq" id="QWZ-kL-rM9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAv-JD-67p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000" y="1158"/>
+            <point key="canvasLocation" x="2751" y="414"/>
         </scene>
         <!--Gradient View Controller-->
         <scene sceneID="ACV-RJ-AUb">
@@ -225,34 +284,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Lk-iD-Fey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2751" y="1159"/>
-        </scene>
-        <!--Scroller View Controller-->
-        <scene sceneID="7G9-ym-8vF">
-            <objects>
-                <viewController id="zTy-gZ-LMV" customClass="ScrollerViewController" customModule="myBrilliantApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gz3-fo-lgm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNz-FJ-m8p">
-                                <rect key="frame" x="0.0" y="44" width="404" height="818"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="5Tf-sL-ABo"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="0jW-5x-2rZ"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="kKC-BE-02c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="kKC-BE-02c" firstAttribute="trailing" secondItem="PNz-FJ-m8p" secondAttribute="trailing" id="GA0-dg-P5D"/>
-                            <constraint firstItem="PNz-FJ-m8p" firstAttribute="top" secondItem="kKC-BE-02c" secondAttribute="top" id="LKE-84-qIa"/>
-                            <constraint firstItem="kKC-BE-02c" firstAttribute="bottom" secondItem="PNz-FJ-m8p" secondAttribute="bottom" id="VDC-Xu-v03"/>
-                            <constraint firstItem="PNz-FJ-m8p" firstAttribute="leading" secondItem="kKC-BE-02c" secondAttribute="leading" id="x0U-OV-8aY"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="v8O-O5-djm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3500.0000000000005" y="1157.8125"/>
         </scene>
     </scenes>
     <resources>
