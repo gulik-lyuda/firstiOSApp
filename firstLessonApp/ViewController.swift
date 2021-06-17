@@ -7,6 +7,23 @@
 
 import UIKit
 
+//These 2 extensions we need to define random colors
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(red:   .random(),
+                       green: .random(),
+                       blue:  .random(),
+                       alpha: 1.0)
+    }
+}
+// end of 2 extensions we need to define random colors
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var appCaption: UILabel!
@@ -18,16 +35,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeAppCaption(_ sender: UIButton) {
-        appCaption.backgroundColor = UIColor(named: "greyLight")
+        appCaption.backgroundColor = .random() //UIColor(named: "greyLight")
         appCaption.text = "It's still brilliant!"
         appCaption.font = appCaption.font.withSize(24)
-        appCaption.textColor = UIColor.red
-        sender.isEnabled = false
+        appCaption.textColor = .random() // UIColor.red
     }
+    
     @IBAction func changeViewController(_ sender: UIButton) {
-        self.view.backgroundColor = UIColor(named: "bgContrast")
+        self.view.backgroundColor = .random() //UIColor(named: "bgContrast")
         self.navigationController?.title = "View Controller"
-        sender.isEnabled = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
